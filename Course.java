@@ -81,4 +81,12 @@ public class Course {
         send += "}";
         return send;
     }
+
+    public float FinalGrade() {
+        float sum = 0;
+        for (int j = 0; j < this._i; j++) {
+            sum += this._grades[j];
+        }
+        return sum / (this._i);
+    }
 }

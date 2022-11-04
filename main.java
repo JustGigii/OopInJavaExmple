@@ -2,16 +2,15 @@
 public class main {
 
     public static void main(String[] args) {
-        Course C = new Course("C", 3);
-        if (C.AddGrade(100f) == -1)
-            System.out.println("something wrong");
-        if (C.AddGrade(85f) == -1)
-            System.out.println("something wrong");
-        if (C.AddGrade(95f) == -1)
-            System.out.println("something wrong");
-        System.out.println(C.toString());
-        if (!C.RemoveGrade(1))
-            System.out.println("something wrong");
-        System.out.println(C.toString());
+        Student ohad = new Student("ohad", "000001", "yg4a");
+        Student omri = new Student("omri", "000000", "yg");
+        Student programStudents[] = new Student[3];
+        programStudents[0] = new Student(ohad);
+        programStudents[1] = new Student(omri);
+        programStudents[2] = new Student(ohad);
+        programStudents[2].SetName("ori");
+        for (int i = 0; i < programStudents.length; i++) {
+            System.out.println(programStudents[i].toString());
+        }
     }
 }
