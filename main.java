@@ -1,16 +1,17 @@
-import java.util.Scanner;
 
 public class main {
 
     public static void main(String[] args) {
-        Scanner s1 = new Scanner(System.in);
-        Student amit = new Student("amit", "123", "yg4b", 99, 99, 99);
-        Student hadash = new Student();
-        Student holder = new Student("amit", "123", "yg4b", 99, 99, 99);
-        if (amit.equals(holder))
-            System.out.println("equal");
-        else
-            System.out.println("not equal");
-
+        Course C = new Course("C", 3);
+        if (C.AddGrade(100f) == -1)
+            System.out.println("something wrong");
+        if (C.AddGrade(85f) == -1)
+            System.out.println("something wrong");
+        if (C.AddGrade(95f) == -1)
+            System.out.println("something wrong");
+        System.out.println(C.toString());
+        if (!C.RemoveGrade(1))
+            System.out.println("something wrong");
+        System.out.println(C.toString());
     }
 }
