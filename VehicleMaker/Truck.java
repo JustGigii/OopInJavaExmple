@@ -9,7 +9,7 @@ public class Truck extends Vehicle {
         this._hight = 0;
     }
 
-    public Truck(int maxWeight, double hight, String manufacture, String model, int wheelsNum, String color,
+   public Truck(int maxWeight, double hi ght, String manufacture, String model, int wheelsNum, String color,
             double weight) {
         super(manufacture, model, wheelsNum, color, weight);
         _maxWeight = maxWeight;
